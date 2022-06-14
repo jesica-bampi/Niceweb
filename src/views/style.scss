@@ -1,0 +1,231 @@
+$black: #000;
+$white: #fff;
+$ligthgray: #D9D9D9;
+$gray: #958F8F;
+$darkgray: #5d5d60;
+$purple: #740DCE;
+
+.home{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-form{
+  max-width: 556px;
+  @media screen and (max-width: 576px){
+    max-width: 100%;
+  }
+  &-title{
+    h1{
+      font-family: 'Font Black', sans-serif;
+      font-weight: 800;
+      line-height: 130px;
+      font-size: 100px;
+      color: $darkgray;
+      text-align: center;
+      text-transform: uppercase;
+      @media screen and (max-width: 576px){
+        font-size: 80px;
+        line-height: 100px;
+      }
+      @media screen and (max-width: 400px){
+        font-size: 60px;
+        line-height: 80px;
+      }
+    }
+    
+  }
+  &-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    margin: 1rem 0 4rem 0;
+    padding: 4rem 2rem;
+    border: 2px solid $darkgray;
+    box-shadow: 0px 0px 17px $darkgray;
+    gap: 2.5rem;
+    @media screen and (max-width: 576px){
+      padding: 2rem 1rem;
+    }
+    &-form{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      input{
+        width: 100%;
+        height: 73px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $black;
+        padding: 1.5rem;
+        font-family: 'Font Regular', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $gray;
+        background-color: $ligthgray;
+        &:focus, &:active, &:hover{
+          cursor: pointer;
+          box-shadow: none;
+        }
+        @media screen and (max-width: 576px){
+          height: 50px;
+          padding: 0.5rem;
+        }
+      }
+      input::placeholder{
+        font-family: 'Font Italic', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $gray;
+      }
+      input:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+      label{
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 1.5rem;
+        color: $gray;
+        font-family: 'Font Italic', sans-serif;
+        font-weight: 600;
+        @media screen and (max-width: 576px){
+          top: 0.5rem;
+          right: 0.5rem;
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-btn{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button{
+        all: unset;
+        width: 395px;
+        height: 55px;
+        border-radius: 20px;
+        background-color: $purple;
+        color: $white;
+        font-family: 'Font Bold', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: lowercase;
+        border: 2px solid $purple !important;
+        line-height: 25px;
+        &:focus, &:active, &:hover{
+          cursor: pointer;
+          background-color: $white!important;
+          color: $purple!important;
+          border: 2px solid $purple!important;
+        }
+        @media screen and (max-width: 576px){
+          width: 100%;
+        }
+      }
+      
+    }
+  }
+}
+.content-logo{
+  img{
+    width: 284px;
+    height: 65px;
+    @media screen and (max-width: 576px){
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.content-success{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.content-success-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    border: 1px solid $purple;
+    border-radius: 25px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: 768px){
+      width: 90%;
+      padding: 4rem 0.5rem;
+      height: auto;
+    }
+    h1{
+      color: $purple;
+      font-family: 'Font Bold', sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      text-align: center;
+      padding: 2rem 0;
+      @media screen and (max-width: 768px){
+        font-size: 3rem;
+        padding: 1rem 0;
+      }
+    }
+    h5{
+      font-family: 'Font Regular', sans-serif;
+      font-size: 1.5rem;
+      color: $gray;
+      padding: 0;
+      line-height: 40px;
+      @media screen and (max-width: 576px){
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 450px){
+        font-size: 1rem;
+      }
+    }
+    button{
+      all: unset;
+      width: 30%;
+      height: 60px;
+      border-radius: 20px;
+      border: 2px solid $purple;
+      margin-top: 2rem;
+      background-color: $purple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-family: 'Font Bold', sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      @media screen and (max-width: 576px){
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+      &:focus, &:active, &:hover{
+        cursor: pointer;
+        background-color: $white!important;
+        color: $purple!important;
+        border: 2px solid $purple!important;
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+}

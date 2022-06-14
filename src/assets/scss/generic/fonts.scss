@@ -1,0 +1,30 @@
+
+@include fontFace('Font Black','assets/fonts/Roboto-Black.ttf');
+@include fontFace('Font Regular','assets/fonts/Roboto-Regular.ttf');
+@include fontFace('Font Bold','assets/fonts/Roboto-Bold.ttf');
+@include fontFace('Font Light','assets/fonts/Roboto-Light.ttf');
+@include fontFace('Font Medium','assets/fonts/Roboto-Medium.ttf');
+@include fontFace('Font BlackItalic','assets/fonts/Roboto-BlackItalic.ttf');
+@include fontFace('Font Italic','assets/fonts/Roboto-Italic.ttf');
+
+.font-italic{
+  font-family: 'Font Italic';
+}
+.font-black {
+	font-family: 'Font Black';
+}
+.font-black-italic {
+	font-family: 'Font BlackItalic';
+}
+.font-regular {
+	font-family: 'Font Regular';
+}
+.font-bold {
+	font-family: 'Font Bold';
+}
+.font-light {
+	font-family: 'Font Light';
+}
+.font-medium {
+	font-family: 'Font Medium';
+}

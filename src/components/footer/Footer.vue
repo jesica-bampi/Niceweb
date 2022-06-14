@@ -1,0 +1,65 @@
+<template>
+    <footer>
+        <div class="copright">
+            <p>&copy;Niceweb - Todos os direitos reservados</p>
+        </div>
+        <div class="footer-github">
+            <a href="https://github.com/jesica-bampi/niceweb" target="_blank">
+                <img class="img-fluid" src="@/assets/img/github_icon.png" alt="github icon">
+                <p>
+                    <span>GitHub</span>
+                </p>
+            </a>
+        </div>
+
+    </footer>
+</template>
+<style lang="scss" scoped>
+
+$darkgray: #5d5d60;
+
+footer {
+    width: 100%;
+    height: 5vh;
+    color: $darkgray;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute ;
+    bottom: 0;
+}
+
+.copright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: 'Font Regular', sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    
+}
+.footer-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+        p{
+            margin-bottom: 0;
+            font-family: 'Font Regular', sans-serif;
+            font-size: 1rem;
+        }
+    }
+}
+</style>
