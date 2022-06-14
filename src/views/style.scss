@@ -51,6 +51,8 @@ $purple: #740DCE;
     gap: 2.5rem;
     @media screen and (max-width: 576px){
       padding: 2rem 1rem;
+      margin: 1rem 0 2rem 0;
+      gap: 1rem;
     }
     &-form{
       margin: 0;
@@ -73,7 +75,7 @@ $purple: #740DCE;
           box-shadow: none;
         }
         @media screen and (max-width: 576px){
-          height: 50px;
+          height: 40px;
           padding: 0.5rem;
         }
       }
@@ -127,7 +129,8 @@ $purple: #740DCE;
           border: 2px solid $purple!important;
         }
         @media screen and (max-width: 576px){
-          width: 100%;
+          width: 50%;
+          height: 40px;
         }
       }
       

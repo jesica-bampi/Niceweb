@@ -27,16 +27,28 @@ footer {
     justify-content: space-between;
     position: absolute ;
     bottom: 0;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: 8vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.8rem;
+    }
 }
 
 .copright {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     p{
         font-family: 'Font Regular', sans-serif;
         font-size: 1.2rem;
         margin-bottom: 0;
+        @media screen and (max-width: 450px) {
+            font-size: 0.8rem;
+        }
     }
     
 }
@@ -51,14 +63,25 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+        @media screen and (max-width: 450px) {
+            gap: 0.2rem;
+        }
+
         img{
             width: 2rem;
             height: 2rem;
+            @media screen and (max-width: 450px) {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
         p{
             margin-bottom: 0;
             font-family: 'Font Regular', sans-serif;
             font-size: 1rem;
+            @media screen and (max-width: 450px) {
+                font-size: 0.8rem;
+            }
         }
     }
 }
